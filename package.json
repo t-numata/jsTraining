@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "for training javascript",
   "main": "p24.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "eslint": "^5.6.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
