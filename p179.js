@@ -30,10 +30,7 @@ car1.addInsurancePolicy(new InsurancePolicy());
 console.log(car1.isInsured());
 
 const car2 = new Car;
-
-makeInsurable(car2);
 console.log(car2.isInsured());
-
 car2.addInsurancePolicy(new InsurancePolicy());
 console.log(car2.isInsured());
 
