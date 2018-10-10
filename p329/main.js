@@ -7,5 +7,5 @@ $(function() {
     console.log($param instanceof jQuery);
 
     // すべてのp要素の文字列を変更する
-    $('p').text("更新されました！"");
+    $('p').text("更新されました！");
 })
