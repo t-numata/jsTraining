@@ -1,14 +1,22 @@
-const avengers = ['Iron Man', 'Captaion America', 'Ant Man', 'StarLoad', 'Rocket', 'Groot', 'Thor', 'Hulk', 'Spider Man'];
+const avengers = [
+    'Iron Man',
+    'Captaion America',
+    'Ant Man',
+    'StarLoad',
+    'Rocket',
+    'Groot',
+    'Thor',
+    'Hulk',
+    'Spider Man',
+];
 
 const alpabetical = avengers.reduce((a, x) => {
-    if(!a[x[0]]) {
+    if (!a[x[0]]) {
         a[x[0]] = [];
     }
     a[x[0]].push(x);
     return a;
-}, 
-[]
-);
+}, []);
 
 console.log(alpabetical);
 
