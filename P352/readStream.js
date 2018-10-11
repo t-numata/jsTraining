@@ -9,6 +9,7 @@ readStream.on('data', data => {
 
 readStream.on('end', data => {
     console.log('おわり');
+    return data;
 });
 
 /**
