@@ -1,8 +1,8 @@
 const SYM = Symbol();
-const o = {a: 1, b: 2, c: 3};
+const o = { a: 1, b: 2, c: 3 };
 o[SYM] = 4;
-for(let prop in o) {
-    if(!o.hasOwnProperty(prop)) continue;
+for (const prop in o) {
+    if (!o.hasOwnProperty(prop)) continue;
     console.log(`${prop}: ${o[prop]}`);
 }
 

@@ -15,7 +15,7 @@ class Car {
     }
 
     set userGear(value) {
-        if(this._userGears.indexOf(value) < 0) {
+        if (this._userGears.indexOf(value) < 0) {
             throw new Error(`ギア指定が正しくない: ${gear}`);
         }
         this._userGear = value;
@@ -31,11 +31,10 @@ console.log(car2);
 car1.shift('D');
 car1.shift('R');
 
-
 console.log(car1.userGear);
 console.log(car2.userGear);
 
-car1.shift("X");
+car1.shift('X');
 
 /**
  * アクセッサプロパティ

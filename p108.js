@@ -6,17 +6,17 @@ function forPrim(x) {
 
 function forObj(o) {
     console.log(`inside of forObj before ${o.message}`);
-    o.message = "forObj内で代入しました";
-    console.log(`inside of forPbj after ${o.message}`);    
+    o.message = 'forObj内で代入しました';
+    console.log(`inside of forPbj after ${o.message}`);
 }
 
-let x = 3;
+const x = 3;
 console.log(`outside of forPrim before ${x}`);
 forPrim(x);
 console.log(`outside of forPrim before ${x}`);
 
 const o = {
-    message: "message初期値"
+    message: 'message初期値',
 };
 
 console.log(`outside of forObj before ${o.message}`);

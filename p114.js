@@ -1,12 +1,12 @@
 const o = {
-    name: "Groot",
+    name: 'Groot',
     speak() {
         return `I am ${this.name} `;
     },
 };
 
 const o2 = {
-    name: "Steve",
+    name: 'Steve',
     speak() {
         return `I'm ${this.name}`;
     },

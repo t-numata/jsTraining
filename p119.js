@@ -1,5 +1,5 @@
-const groot = {name: "Groot"};
-const steve = {name: "Steve"};
+const groot = { name: 'Groot' };
+const steve = { name: 'Steve' };
 
 function greet() {
     return `I am ${this.name}`;

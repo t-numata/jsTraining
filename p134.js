@@ -1,6 +1,6 @@
 const f = (function() {
     let count = 0;
-    return function () {
+    return function() {
         return `counter result is ${++count}`;
     };
 })();

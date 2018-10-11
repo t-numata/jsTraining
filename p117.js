@@ -5,7 +5,7 @@ const g = function f(stop) {
         console.log(`f is working`);
         f(true);
     }
-}
+};
 
 g(false);
 console.log('----');

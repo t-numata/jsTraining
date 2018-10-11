@@ -1,8 +1,8 @@
 {
-    let x = 'blue';
+    const x = 'blue';
     console.log(x);
     {
-        let x = 3;
+        const x = 3;
         console.log(x);
     }
     console.log(x);

@@ -1,5 +1,5 @@
 function getGreeding() {
-    return "Hello World!";
+    return 'Hello World!';
 }
 
 console.log(getGreeding());
@@ -17,6 +17,6 @@ const o = {};
 o.f = getGreeding;
 console.log(o.f());
 
-const arr = [1,2,3];
+const arr = [1, 2, 3];
 arr[1] = getGreeding;
 console.log(arr[1]());

@@ -1,6 +1,5 @@
 class Car {
-    constructor() {
-    }
+    constructor() {}
 }
 
 const car1 = new Car();

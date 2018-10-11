@@ -1,5 +1,5 @@
 const o = {
-    name: "Groot",
+    name: 'Groot',
     speak() {
         return `I am ${this.name} `;
     },

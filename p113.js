@@ -1,19 +1,19 @@
 const obj = {
-    name: "Tony Stark",
-    spoil: function() {
-        return "I am iron man";
-    }
-}
+    name: 'Tony Stark',
+    spoil() {
+        return 'I am iron man';
+    },
+};
 
 console.log(obj);
 console.log(obj.spoil());
 
 const shorthandObj = {
-    name: "Tony Stark",
+    name: 'Tony Stark',
     spoil() {
-        return "I am iron man";
-    }
-}
+        return 'I am iron man';
+    },
+};
 
 console.log(shorthandObj);
 console.log(shorthandObj.spoil());
