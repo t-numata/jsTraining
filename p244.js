@@ -1,7 +1,7 @@
 function countdown(seconds) {
     return new Promise((onFulfilled, onRejected) => {
         const timeoutIds = [];
-        for (let i = seconds; i >= 0; i--) {
+        for (let i = seconds; i >= 0; i -= 1) {
             timeoutIds.push(
                 setTimeout(() => {
                     if (i === 13) {
@@ -13,7 +13,7 @@ function countdown(seconds) {
                     if (i > 0) {
                         console.log(`${i}...`);
                     } else {
-                        onFulfilled(console.log('GO'));
+                        return onFulfilled(console.log('GO'));
                     }
                 }, (seconds - i) * 1000)
             );
