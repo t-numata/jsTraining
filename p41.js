@@ -3,7 +3,7 @@ const obj = {};
 obj.color = '黄色';
 obj['not an idenrifire'] = 3;
 
-const SIZE = Symbol();
+const SIZE = Symbol('param for size');
 obj[SIZE] = 8;
 console.log(obj[SIZE]);
 obj.SIZE = 12;
