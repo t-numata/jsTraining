@@ -33,7 +33,7 @@ console.log(car1.shift === Car.prototype.shift);
 console.log(car2.shift === Car.prototype.shift);
 
 // 新しいメソッドで上書き
-car1.shift = function(gear) {
+car1.shift = gear => {
     this.userGear = gear.toUpperCase();
 };
 
