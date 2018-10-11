@@ -1,4 +1,4 @@
-const SYM = Symbol();
+const SYM = Symbol('fot test symbol');
 const targetObject = { a: 1, b: 2, c: 3 };
 targetObject[SYM] = 4;
 
