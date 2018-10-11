@@ -1,18 +1,17 @@
-class Car {
-    constructor() {}
-}
+class Car {}
 
 class InsurancePolicy {}
 
-function makeInsurable(obj) {
-    obj.addInsurancePolicy = p => {
-        this.InsurancePolicy = p;
+function makeInsurable(targetObject) {
+    targetObject.addInsurancePolicy = policyObject => {
+        this.InsurancePolicy = policyObject;
     };
 
-    obj.getInsurancePolicy = () => this.InsurancePolicy;
+    targetObject.getInsurancePolicy = () => this.InsurancePolicy;
 
-    obj.isInsured = () => !!this.InsurancePolicy;
+    targetObject.isInsured = () => !!this.InsurancePolicy;
 }
+
 // Carクラスに対して関数を追加する。
 makeInsurable(Car.prototype);
 
