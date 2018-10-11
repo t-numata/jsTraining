@@ -1,14 +1,16 @@
-const obj = {
-    b: 2,
-    c: 3,
-    d: 4,
+const sampleObject = {
+    amazon: 2,
+    rakuten: 3,
+    ebay: 4,
 };
-const { a, b, c } = obj;
+const { amazon, rakuten, ebay } = sampleObject;
 
-console.log(a);
-console.log(b);
-console.log(c);
-console.log(d);
+console.log(amazon);
+console.log(rakuten);
+console.log(ebay);
+
+// ここをコメントアウトするとエラーで終わる
+// console.log(yahoo);
 
 /**
  * aはundefined
