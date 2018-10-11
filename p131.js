@@ -1,13 +1,13 @@
 {
-    let x = 'blue';
-    console.log(x);
+    const color = 'blue';
+    console.log(color);
     {
-        let x = 3;
-        console.log(x);
+        const color = 111111;
+        console.log(color);
     }
-    console.log(x);
+    console.log(color);
 }
-console.log(typeof x);
+console.log(typeof color);
 
 /**
  * L4からのブロックでは上の階層のxをマスクしている

@@ -1,9 +1,8 @@
 const sin = Math.sin;
 const cos = Math.cos;
-const theta = Math.PI/4;
+const theta = Math.PI / 4;
 const zoom = 2;
 const offset = [1, -3];
-
 
 const pipeline = [
     function rotete(p) {
@@ -14,19 +13,19 @@ const pipeline = [
     },
 
     function scale(p) {
-        return {x: p.x * zoom, y: p.y * zoom};
+        return { x: p.x * zoom, y: p.y * zoom };
     },
 
     function translate(p) {
-        return {x: p.x + offset[0], y: p.y + offset[1]};
-    }
+        return { x: p.x + offset[0], y: p.y + offset[1] };
+    },
 ];
 
-const p = {x: 1, y: 1};
+const p = { x: 1, y: 1 };
 console.log(p);
 
 let p2 = p;
-for(let i = 0; i < pipeline.length; i++) {
+for (let i = 0; i < pipeline.length; i += 1) {
     p2 = pipeline[i](p2);
     console.log(p2);
 }

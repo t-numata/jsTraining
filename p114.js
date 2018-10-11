@@ -1,25 +1,25 @@
-const o = {
-    name: "Groot",
+const grootObject = {
+    name: 'Groot',
     speak() {
         return `I am ${this.name} `;
     },
 };
 
-const o2 = {
-    name: "Steve",
+const steaveObject = {
+    name: 'Steve',
     speak() {
         return `I'm ${this.name}`;
     },
 };
 
-console.log(o);
-console.log(o2);
+console.log(grootObject);
+console.log(steaveObject);
 
-console.log(o.speak());
-console.log(o2.speak());
+console.log(grootObject.speak());
+console.log(steaveObject.speak());
 
 /**
  * thisはそのメソッドがプロパティとなっているオブジェクト自身を指す
  * o.speak()におけるthisはo
- * o2.speak()におけるthisはo2となる
+ * steaveObject.speak()におけるthisはsteaveObjectとなる
  */

@@ -1,11 +1,11 @@
 const debug = require('debug')('main');
 
 debug('start');
-for(let i = 0; i < 10; i ++) {
+for (let i = 0; i < 10; i += 1) {
     console.log(i);
 }
 
-debug('finish')
+debug('finish');
 
 /**
  * node_modulesのdebugを用る

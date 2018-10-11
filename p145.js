@@ -1,5 +1,5 @@
-let arr = [11, 12, 13, 14];
-let arr2 = arr.copyWithin(1, 2);
+const arr = [11, 12, 13, 14];
+const arr2 = arr.copyWithin(1, 2);
 
 console.log(arr);
 console.log(arr2);

@@ -1,15 +1,15 @@
-let f;
+let functionVal;
+
+// block
 {
-    let o = {note: `it is safe`, note2: 'it is OK'};
-    f = function () {
-        console.log('inside of function::' + o.note);
-        return o;
-    }
+    const testObject = { note: `it is safe`, note2: 'it is OK' };
+    functionVal = () => testObject;
 }
-let oRef = f();
-console.log(oRef);
-oRef.note = 'It is not SAFE!!'
-console.log(oRef);
+
+const referFunct = functionVal();
+console.log(referFunct);
+referFunct.note = 'It is not SAFE!!';
+console.log(referFunct);
 
 /**
  * 関数を使うと、スコープ外から例外的にアクセスできる

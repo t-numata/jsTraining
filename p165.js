@@ -1,7 +1,4 @@
-class Car {
-    constructor() {
-    }
-}
+class Car {}
 
 const car1 = new Car();
 const car2 = new Car();

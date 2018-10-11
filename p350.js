@@ -1,17 +1,17 @@
-const exec = require("child_process").exec;
+const exec = require('child_process').exec;
 
-const command = "ls";
+const command = 'ls';
 
-exec(command, function(err, stdout, stderr) {
-    if(err) return console.error(`実行エラー ${command}`);
+exec(command, (err, stdout, stderr) => {
+    if (err) return console.error(`実行エラー ${command}`);
 
-    stdout = stdout.toString();
-    console.log(stdout);
+    const stdoutString = stdout.toString();
+    console.log(stdoutString);
 
-    stderr = stderr.toString();
-    if(stderr !== '') {
-        console.error("error:");
-        console.error(stderr);
+    const stderrString = stderr.toString();
+    if (stderr !== '') {
+        console.error('error:');
+        console.error(stderrString);
     }
 });
 

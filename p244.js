@@ -1,38 +1,42 @@
 function countdown(seconds) {
-    return new Promise(function(onFulfilled, onRejected) {
+    return new Promise((onFulfilled, onRejected) => {
         const timeoutIds = [];
-        for(let i = seconds; i >= 0; i --) {
-            timeoutIds.push(setTimeout(function() {
-                if(i === 13) {
-                    timeoutIds.forEach(clearTimeout);
-                    return onRejected(new Error(`${i}という数字は呪われています`));
-                }
-                if(i > 0) {
-                    console.log(i + '...');
-                } else {
-                    onFulfilled(console.log('GO'));
-                }
-            }, (seconds - i) * 1000 ))
+        for (let i = seconds; i >= 0; i -= 1) {
+            timeoutIds.push(
+                setTimeout(() => {
+                    if (i === 13) {
+                        timeoutIds.forEach(clearTimeout);
+                        return onRejected(
+                            new Error(`${i}という数字は呪われています`)
+                        );
+                    }
+                    if (i > 0) {
+                        console.log(`${i}...`);
+                    } else {
+                        return onFulfilled(console.log('GO'));
+                    }
+                }, (seconds - i) * 1000)
+            );
         }
     });
 }
 
 function launch() {
-    return new Promise(function(onFulfilled, onRejected) {
+    return new Promise((onFulfilled, onRejected) => {
         console.log('はっしゃ！');
-        setTimeout(function(){
-            onFulfilled('周回軌道に乗った!!')
+        setTimeout(() => {
+            onFulfilled('周回軌道に乗った!!');
         }, 2 * 1000);
     });
 }
 
 countdown(11)
     .then(launch)
-    .then(function(msg){
+    .then(msg => {
         console.log(msg);
     })
-    .catch(function(err){
-        console.error('メーデーメーデーこちらトラブル発生' + err);
+    .catch(err => {
+        console.error(`メーデーメーデーこちらトラブル発生${err}`);
     });
 
 /**

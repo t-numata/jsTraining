@@ -1,16 +1,30 @@
-const f = (function() {
+// 動作確認用のES6より前の書き方
+const oldSchool = (function() {
     let count = 0;
-    return function () {
-        return `counter result is ${++count}`;
+    return function() {
+        return `oldSchool counter result is ${++count}`;
     };
 })();
 
-console.log(f());
-console.log(f());
-console.log(f());
+console.log(oldSchool());
+console.log(oldSchool());
+console.log(oldSchool());
+
+// ES6からアロー関数を使うと以下の通りになる
+const newWave = (() => {
+    let newCount = 0;
+    return () => {
+        newCount += 1;
+        return `newWave conter result is ${newCount}`;
+    };
+})();
+
+console.log(newWave());
+console.log(newWave());
+console.log(newWave());
 
 /**
- * IIFEの記法に沿っているため、fに代入される関数は読み込まれた時点で実行される
+ * IIFEの記法に沿っているため、fに代入される関数は読み込まれßßた時点で実行される
  * そのため、let count = 0が実行され、
  * fの中身は以下の通りになる
  * function () {

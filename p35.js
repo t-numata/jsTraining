@@ -1,5 +1,5 @@
 let currentTempC = 25.5;
-const message = "現在の温度は" + currentTempC + "℃です"
+const message = `現在の温度は${currentTempC}℃です`;
 
 console.log(message);
 

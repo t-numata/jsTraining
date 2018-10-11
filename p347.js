@@ -1,13 +1,13 @@
 const fs = require('fs');
 
-fs.readdir('.', function(err, files) {
-    if(err) {
+fs.readdir('.', (err, files) => {
+    if (err) {
         console.error('致命的なエラー: ディレクトリを読み込めません');
         process.exit(1);
     }
     const jsFiles = files.filter(f => /\.js/i.test(f));
 
-    if(jsFiles.length === 0) {
+    if (jsFiles.length === 0) {
         console.log('対象のファイルが見つかりません');
         process.exit(0);
     }

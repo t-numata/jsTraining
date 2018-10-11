@@ -1,22 +1,24 @@
 // プリミティブ比較実験
-const n = 5;
-const s = "5";
+const numberVal = 5;
+const stringVal = '5';
 
-console.log(n === s);
-console.log(n !== s);
-console.log(n === Number(s));
-console.log(n !== Number(s));
-// 非推奨の比較
-console.log(n == s);
-console.log(n != s);
+console.log(numberVal === stringVal);
+console.log(numberVal !== stringVal);
+console.log(numberVal === Number(stringVal));
+console.log(numberVal !== Number(stringVals));
+
+// 非推奨の比較(動作確認)
+console.log(numberVal == stringVal);
+console.log(numberVal != stringVal);
 
 // オブジェクト比較実験
-const a = {name: "あるオブジェクト"};
-const b = {name: "あるオブジェクト"};
+const a = { name: 'あるオブジェクト' };
+const b = { name: 'あるオブジェクト' };
 
 console.log(a === b);
 console.log(a !== b);
-// 非推奨の比較
+
+// 非推奨の比較(動作確認)
 console.log(a == b);
 console.log(a != b);
 

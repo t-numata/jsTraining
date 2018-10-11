@@ -1,5 +1,5 @@
 // 文字列と数値の混同
-const result1 = 3 + '30'
+const result1 = `${3}30`;
 console.log(result1);
 // 数値3 が文字列となり結果は330
 

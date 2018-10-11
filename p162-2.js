@@ -1,12 +1,15 @@
-const SYM = Symbol();
-const o = {a: 1, b: 2, c: 3};
-o[SYM] = 4;
-for(let prop in o) {
-    if(!o.hasOwnProperty(prop)) continue;
-    console.log(`${prop}: ${o[prop]}`);
+const SYM = Symbol('fot test symbol');
+const targetObject = { a: 1, b: 2, c: 3 };
+targetObject[SYM] = 4;
+
+for (const prop in targetObject) {
+    if (!targetObject.hasOwnProperty(prop)) {
+        continue;
+    }
+    console.log(`${prop}: ${targetObject[prop]}`);
 }
 
-console.log(o[SYM]);
+console.log(targetObject[SYM]);
 
 /**
  * オブジェクトのプロパティを取得する
