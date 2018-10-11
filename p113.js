@@ -1,12 +1,12 @@
-const obj = {
+const orignalObject = {
     name: 'Tony Stark',
     spoil() {
         return 'I am iron man';
     },
 };
 
-console.log(obj);
-console.log(obj.spoil());
+console.log(orignalObject);
+console.log(orignalObject.spoil());
 
 const shorthandObj = {
     name: 'Tony Stark',
