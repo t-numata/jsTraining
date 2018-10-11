@@ -1,35 +1,27 @@
 class Car {
-    constructor() {
-
-    }
+    constructor() {}
 }
 
-class InsurancePolicy {
-
-}
+class InsurancePolicy {}
 
 function makeInsurable(obj) {
-    obj.addInsurancePolicy = function(p) {
+    obj.addInsurancePolicy = p => {
         this.InsurancePolicy = p;
     };
-    
-    obj.getInsurancePolicy = function () {
-        return this.InsurancePolicy;
-    }
 
-    obj.isInsured = function() {
-        return !!this.InsurancePolicy;
-    };
+    obj.getInsurancePolicy = () => this.InsurancePolicy;
+
+    obj.isInsured = () => !!this.InsurancePolicy;
 }
 // Carクラスに対して関数を追加する。
 makeInsurable(Car.prototype);
 
-const car1 = new Car;
+const car1 = new Car();
 console.log(car1.isInsured());
 car1.addInsurancePolicy(new InsurancePolicy());
 console.log(car1.isInsured());
 
-const car2 = new Car;
+const car2 = new Car();
 console.log(car2.isInsured());
 car2.addInsurancePolicy(new InsurancePolicy());
 console.log(car2.isInsured());
