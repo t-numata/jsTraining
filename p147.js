@@ -1,7 +1,7 @@
 class Person {
     constructor(name) {
         this.name = name;
-        this.id = Person.nextId++;
+        this.id = Person.nextId += 1;
     }
 }
 
