@@ -1,14 +1,11 @@
 let f;
 {
-    let o = {note: `it is safe`, note2: 'it is OK'};
-    f = function () {
-        console.log('inside of function::' + o.note);
-        return o;
-    }
+    const o = { note: `it is safe`, note2: 'it is OK' };
+    f = () => o;
 }
-let oRef = f();
+const oRef = f();
 console.log(oRef);
-oRef.note = 'It is not SAFE!!'
+oRef.note = 'It is not SAFE!!';
 console.log(oRef);
 
 /**
