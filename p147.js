@@ -21,6 +21,9 @@ console.log(
     }, steve)
 );
 
+// アロー関数ではthisは宣言された時点で固定されるため、find第二引数にてthisを変更することはできない
+console.log(arr.find(p => p.id === this.id, steve));
+
 /**
  * findで条件を関数で指定したい場合
  */
