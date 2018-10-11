@@ -1,14 +1,14 @@
 function addPrefix(prefix, ...words) {
     const prefixedWord = [];
-    for (let i=0; i<words.length; i++) {
+    for (let i = 0; i < words.length; i += 1) {
         prefixedWord[i] = prefix + words[i];
     }
-    
+
     return prefixedWord;
 }
 
-console.log(addPrefix("con", "vers", "vex"));
-console.log(addPrefix("非", "プログラマ", "デザイナ", "コーダー"));
+console.log(addPrefix('con', 'vers', 'vex'));
+console.log(addPrefix('非', 'プログラマ', 'デザイナ', 'コーダー'));
 
 /**
  * 展開演算子 (引数...words)をを使うことで
