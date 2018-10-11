@@ -1,15 +1,15 @@
-const g = function f(stop) {
+const stopFunctionVal = function testFunction(stop) {
     if (stop) {
-        console.log('f stop');
+        console.log('testFunction stop');
     } else {
-        console.log(`f is working`);
-        f(true);
+        console.log(`testFunction is working`);
+        testFunction(true);
     }
 };
 
-g(false);
+stopFunctionVal(false);
 console.log('----');
-g(true);
+stopFunctionVal(true);
 
 /**
  * gの引数は関数fに引数として渡される
