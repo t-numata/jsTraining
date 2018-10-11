@@ -1,11 +1,14 @@
 const arr = [1, 2, 3];
-let [x, y] = arr;
+const [x, y] = arr;
 console.log(x);
 console.log(y);
 
-//変数の入れ替えが分割代入で簡単にできる
-let a = 5, b = 10;
+// 変数の入れ替えが分割代入で簡単にできる
+let a = 5;
+let b = 10;
+
 [a, b] = [b, a];
+
 console.log(a);
 console.log(b);
 

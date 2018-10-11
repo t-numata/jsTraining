@@ -23,5 +23,5 @@ while (true) {
         break;
     }
 }
-console.log(`${x}で停止`)
-console.log(Number.EPSILON)
+console.log(`${x}で停止`);
+console.log(Number.EPSILON);

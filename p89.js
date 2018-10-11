@@ -1,6 +1,6 @@
 // プリミティブ比較実験
 const n = 5;
-const s = "5";
+const s = '5';
 
 console.log(n === s);
 console.log(n !== s);
@@ -11,8 +11,8 @@ console.log(n == s);
 console.log(n != s);
 
 // オブジェクト比較実験
-const a = {name: "あるオブジェクト"};
-const b = {name: "あるオブジェクト"};
+const a = { name: 'あるオブジェクト' };
+const b = { name: 'あるオブジェクト' };
 
 console.log(a === b);
 console.log(a !== b);

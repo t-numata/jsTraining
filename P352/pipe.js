@@ -8,4 +8,4 @@ readStream.pipe(writeStream);
 /**
  * pipeのストリーム
  * データの移動によく活用されるとのこと
- */
+ *

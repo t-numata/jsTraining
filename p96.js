@@ -1,9 +1,11 @@
-let x = 0, y = 10, z;
+let x = 0;
+let y = 10;
+let z;
 z = (x++, y++);
 console.log(z);
 
-x = 0, y = 10
-z = x++, y++;
+(x = 0), (y = 10);
+(z = x++), y++;
 console.log(z);
 
 /**

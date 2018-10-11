@@ -4,11 +4,7 @@ const u3 = { name: 'Peter' };
 const u4 = { name: 'Quil' };
 const u5 = { name: 'Clark' };
 
-const Comics = new Map([
-    [u1, 'Marvel'],
-    [u2, 'DC'],
-    [u3, 'Marvel']
-]);
+const Comics = new Map([[u1, 'Marvel'], [u2, 'DC'], [u3, 'Marvel']]);
 
 console.log(Comics.get(u2));
 
