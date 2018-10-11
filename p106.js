@@ -1,3 +1,4 @@
+// 関数の宣言と呼び出し
 function getGreeding() {
     return 'Hello World!';
 }
@@ -5,18 +6,14 @@ function getGreeding() {
 console.log(getGreeding());
 console.log(getGreeding);
 
-/**
- * console.log(getGreeding);で、関数を「参照」できる
- * そのため以下のような代入が可能になる
- */
+// 変数へ格納した際の挙動
+const funcVal = () => 'Hello World';
+console.log(funcVal());
 
-const f = getGreeding;
-console.log(f());
+const sampleObject = {};
+sampleObject.funcVal = getGreeding;
+console.log(sampleObject.funcVal());
 
-const o = {};
-o.f = getGreeding;
-console.log(o.f());
-
-const arr = [1, 2, 3];
-arr[1] = getGreeding;
-console.log(arr[1]());
+const sampleArray = [1, 2, 3];
+sampleArray[1] = getGreeding;
+console.log(sampleArray[1]());
