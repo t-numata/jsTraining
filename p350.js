@@ -5,13 +5,13 @@ const command = 'ls';
 exec(command, (err, stdout, stderr) => {
     if (err) return console.error(`実行エラー ${command}`);
 
-    stdout = stdout.toString();
-    console.log(stdout);
+    const stdoutString = stdout.toString();
+    console.log(stdoutString);
 
-    stderr = stderr.toString();
+    const stderrString = stderr.toString();
     if (stderr !== '') {
         console.error('error:');
-        console.error(stderr);
+        console.error(stderrString);
     }
 });
 
