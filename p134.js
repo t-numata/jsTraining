@@ -1,3 +1,4 @@
+// 動作確認用のES6より前の書き方
 const oldSchool = (function() {
     let count = 0;
     return function() {
