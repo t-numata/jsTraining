@@ -25,7 +25,7 @@ const p = { x: 1, y: 1 };
 console.log(p);
 
 let p2 = p;
-for (let i = 0; i < pipeline.length; i++) {
+for (let i = 0; i < pipeline.length; i += 1) {
     p2 = pipeline[i](p2);
     console.log(p2);
 }
