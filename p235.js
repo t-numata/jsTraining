@@ -7,7 +7,7 @@ fs.readFile(fname, (err, data) => {
             `ファイルの読み込み時エラー ${fname}: ${err.message}`
         );
     }
-    console.log(`ファイル${fname}の中身を表示します`);
+    return console.log(`ファイル${fname}の中身を表示します ${data}`);
 });
 
 /**
