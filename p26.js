@@ -8,4 +8,5 @@ console.log(currentTempC);
  * 通例的にアンダースコアでつなげることが多い
  * */
 
+// 動作確認用の代入
 const ROOM_TEMP = 25.5;
