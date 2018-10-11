@@ -1,20 +1,41 @@
-function f(o) {
-    console.log(`inside of f before set o.message = ${o.message}`);
-    o.message = 'fで最初のセット';
-    console.log(`inside of f 1st set o.message = ${o.message}`);
-    o = {
+function testForObjectBehave(sampleObject) {
+    console.log(
+        `inside of testForObjectBehave before set sampleObject.message = ${
+            sampleObject.message
+        }`
+    );
+    sampleObject.message = 'fで最初のセット'; // 動作確認用の代入
+    console.log(
+        `inside of testForObjectBehave 1st set sampleObject.message = ${
+            sampleObject.message
+        }`
+    );
+    // 動作確認用の代入
+    sampleObject = {
         message: '新しいオブジェクト',
     };
-    console.log(`inside of f 2nd set o.message = ${o.message}`);
+    console.log(
+        `inside of testForObjectBehave 2nd set sampleObject.message = ${
+            sampleObject.message
+        }`
+    );
 }
 
-const o = {
+const sampleObject = {
     message: '初期値',
 };
 
-console.log(`outside of f before o.message = ${o.message}`);
-f(o);
-console.log(`outside of f after o.message = ${o.message}`);
+console.log(
+    `outside of testForObjectBehave before sampleObject.message = ${
+        sampleObject.message
+    }`
+);
+testForObjectBehave(sampleObject);
+console.log(
+    `outside of testForObjectBehave after sampleObject.message = ${
+        sampleObject.message
+    }`
+);
 
 /**
  * L3では渡されたオブジェクトの値を参照している
